@@ -1,3 +1,3 @@
 # Data-Structures
 
-This consists of code implementation of data structures.
+This consists of code implementations of data structures and algorithms.

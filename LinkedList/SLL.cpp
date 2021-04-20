@@ -143,18 +143,20 @@ class list{
     }
     void list::del()
     {
+         q=head;
+        node*prev=NULL;
+        
         int dno;
         cout << endl << "Enter the number to be deleted:";
         cin >> dno;
-        
-        q=head;
-        node*prev=NULL;
+          
 
         if(q != NULL && q->data == dno) //if head node is to be deleted
         {
             head=q->next; 
             q->next=NULL;
-            delete q;            
+            delete q; 
+            cout<<"Node found and deleted"<<endl;           
             return;
         }
         else
@@ -167,7 +169,10 @@ class list{
  
             // If key was not present in linked list
             if (q == NULL)
-                return;
+            {
+                cout << "Key not present in the list"<< endl; return;
+            }
+            
  
             // Unlink the node from linked list
             prev->next = q->next;
@@ -175,6 +180,8 @@ class list{
  
             // Free memory
             delete q;
+            cout<<"Node found and deleted"<<endl;           
+
         }
         
     }

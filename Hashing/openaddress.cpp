@@ -40,7 +40,8 @@ struct MyHash
     {
         int h=hash(key);
         int i=h;
-        while(arr[i]!=-1){
+        while(arr[i]!=-1)
+	{
             if(arr[i]==key)
                 return true;
             i=(i+1)%cap;
@@ -56,6 +57,7 @@ struct MyHash
         while(arr[i]!=-1){
             if(arr[i]==key){
                 arr[i]=-2;
+                size-=1;
                 return true;
             }
             i=(i+1)%cap;

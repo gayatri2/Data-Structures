@@ -344,7 +344,7 @@ node * tree::deletenode(node*root,int ndel)
         root=NULL;
         return root;
     }
-    if(root->left==NULL)
+    if(root->left==NULL) //one child
     {
         node*temp=root;
         root=root->right;
@@ -352,7 +352,7 @@ node * tree::deletenode(node*root,int ndel)
         return root;
     }
     
-    if(root->right==NULL)
+    if(root->right==NULL)  //one child
     {
         node*temp=root;
         root=root->left;

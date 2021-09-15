@@ -1,0 +1,23 @@
+
+//N=4 then sum=4+3+2+1+0=10
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int Sum(int n)
+{
+    if(n==0)    //base condition
+    {
+        return 0;
+    }
+    int prevSum=Sum(n-1);
+    return n+prevSum;
+}
+
+
+int main()
+{
+    int n;
+    cin >> n;
+    cout << Sum(n) << endl;
+}

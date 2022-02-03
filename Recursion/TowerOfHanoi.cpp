@@ -1,6 +1,7 @@
 // Tower of hanoi: 3 rods and n disks
 //1. only one disk can be moved at a time
-//2. each move consists of taking the upper disk from one of the stacks and placing it on top of another stack ie. disk can only be moved if it is the uppermost disk on a stack.
+//2. each move consists of taking the upper disk from one of the stacks and placing it on top of another stack ie. disk can only
+// be moved if it is the uppermost disk on a stack.
 //3. no disk may be placed on top of a smaller disk
 
 //idea: move n-1 tiles to helper then place the remaining tile to dest and then place

@@ -20,7 +20,7 @@ void BFS(vector<int> adj[], int V, int s)
 		q.pop();
 		cout << u << " "; 
 		 
-		for(int v=0; v<adj[u].size(); v++){ //traversing the list at that vertex index. u is the element at the queue front
+		for(int v:adj[u]){ //traversing the list at that vertex index. u is the element at the queue front
 		    if(visited[v]==false){
 		        visited[v]=true;
 		        q.push(v);
